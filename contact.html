@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>WatcHGoods</title>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav>
+        <div class="logo">
+            WatcHGoods
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="Watches.html">Watches</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a class="active" href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Us Form -->
+    <section id="contact">
+        <div class="container">
+            <form action="" onsubmit="validatecontact(event)" id="contactForm">
+                <h1>CONTACT US</h1>
+                <div class="contactInput">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="" id="name" placeholder="Enter your full name">
+                    <p class="validation">Must contain minimum of 3 characters.</p>
+                </div>
+
+                <div class="contactInput">
+                    <label for="" class="gender">Gender</label>
+                    <div class="gender">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+
+                </div>
+
+                <div class="contactInput">
+                    <label for="email">Email</label>
+                    <input type="text" name="" id="email" placeholder="Enter your email">
+                    <p class="validation">Must end with "@gmail.com" </p>
+                </div>
+
+                <div class="contactInput">
+                    <label for="country">Country</label>
+                    <select id="country" name="country" class="required">
+                        <option value="">Select a country</option>
+                        <option value="ARG">Argentina</option>
+                        <option value="AUS">Australia</option>
+                        <option value="AUT">Austria</option>
+                        <option value="BRA">Brazil</option>
+                        <option value="CAN">Canada</option>
+                        <option value="CHN">China</option>
+                        <option value="EGY">Egypt</option>
+                        <option value="FRA">France</option>
+                        <option value="DEU">Germany</option>
+                        <option value="IND">India</option>
+                        <option value="IND">Indonesia</option>
+                        <option value="ITA">Italy</option>
+                        <option value="JPN">Japan</option>
+                        <option value="MEX">Mexico</option>
+                        <option value="MAR">Morocco</option>
+                        <option value="NZL">New Zealand</option>
+                        <option value="RUS">Russia</option>
+                        <option value="ZAF">South Africa</option>
+                        <option value="ESP">Spain</option>
+                        <option value="SWE">Sweden</option>
+                        <option value="THA">Thailand</option>
+                        <option value="TUR">Turkey</option>
+                        <option value="GBR">United Kingdom</option>
+                        <option value="USA">United States</option>
+                        <!-- Add more options for other countries -->
+                      </select>
+                    <p class="validation">Select your country</p>
+                </div>
+
+                <div class="contactInput">
+                    <label for="message"  >Message</label>
+                    <textarea  name="message" id="message" placeholder="Write something.."></textarea>
+                    <p class="validation">
+                        Must be at least 10 words and at most 100 words
+                    </p>
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox" id="terms" name="terms" value="agree">
+                    <label for="terms">I have read and agreed to the <a href="#">terms and conditions</a></label>
+                </div>
+                <button type="submit">Contact Us</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footerContent">
+                <div class="footerLeft">
+                        <h1>WatcHGoods</h1>
+                    <p>Join us on this horological adventure and indulge in the world of luxury watches with WatcHGoods. Your passion deserves nothing less than perfection.
+                    </p>
+                </div>
+                <div class="footerMid">
+                    <h2>Quick Links</h2>
+                    <div class="links">
+                        <a href="index.html">
+                            Home
+                        </a>
+                        <a href="locations.html">
+                            Locations
+                        </a>
+                        <a href="watches.html">
+                            Watches
+                        </a>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+                <div class="footerRight">
+                    <div class="social">
+                        <h2>Social Media</h2>
+                        <div class="social-container">
+                            <a href="https://www.facebook.com">
+                                <div class="facebook">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.twitter.com">
+                                <div class="twitter">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com">
+                                <div class="linkedin">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com">
+                                <div class="instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.youtube.com">
+                                <div class="youtube">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <h4>Copyright © 2022 WatcHGoods, All rights reserved </h4>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/7c925acf6e.js" crossorigin="anonymous"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

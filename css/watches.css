@@ -1,0 +1,106 @@
+/* watches */
+#watches {
+  min-height: 100vh;
+  background: url(../asset/background/luxuryWhite.jpg) no-repeat center;
+  background-size: cover;
+}
+#watches .container {
+  padding: 150px 10% 100px 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  background-color: #0000002d;
+}
+#watches .container .mainstat {
+  width: 100%;
+  padding: 50px;
+  /* background-color:; */
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#watches .container .cardContainer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+#watches .container .cardContainer .cardDescription {
+  text-align: center;
+  font-size: 18px;
+}
+#watches .container .cardContainer .card:hover .cardDescription {
+  color: white;
+  transition: 0.3s;
+}
+#watches .container .mainstat h1 {
+  text-align: center;
+  color:#1e152a;
+  font-size: 64px;
+  font-weight: bolder;
+}
+#watches .container .mainstat h2 {
+  color: #1e152a;
+}
+#watches .container .cardContainer .card {
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+#watches .container .cardContainer .card:hover {
+  background-color: #1e152a;
+  transition: 0.5s;
+}
+#watches .container .cardContainer .card:hover h2 {
+  color: #f5cb5c;
+  transition: 0.3s;
+}
+#watches .container .cardContainer .card h2 {
+  color: #1e152a;
+  text-align: left;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+#watches .container .cardContainer .card .cardImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#watches .container .cardContainer .card .cardImg img {
+  max-height: 400px;
+  max-width: 100%;
+}
+
+
+/* Media query */
+@media (max-width: 800px) {
+  #watches .container {
+    padding: 150px 10% 100px 10%;
+    width: 100%;
+    /* display: flex; */
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+    background-color: #0000002d;
+  }
+  #watches .container .cardContainer .card .cardImg img {
+
+    height: 250px;
+  }
+
+  #watches .container .cardContainer .card h2 {
+    font-size: 32px;
+  }
+
+  #watches .container .mainstat h1 {
+    text-align: center;
+    margin-left: -10%;
+    font-size: 48px;
+  }
+}

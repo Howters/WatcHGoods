@@ -1,0 +1,107 @@
+/* Contact Us Form */
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #1d1f27, #f5cb5c 200%);;
+  /* background: url(../asset/background/backgroundcontact.jpg) no-repeat center; */
+  background-size: cover;
+}
+
+#contact .container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 150px 10% 80px 10%;
+
+}
+
+#contact .container form {
+  display: flex;
+  flex-direction: column;
+  background-color: #1d1f27;
+  padding: 48px;
+  border-radius: 10px;
+  width: 1100px;
+}
+#contact .container form h1 {
+  color: #f5cb5c;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+#contact .container form .contactInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+#contact .container form label {
+  color: #f5cb5c;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+#contact .container form input {
+  border: solid 1px black;
+}
+#contact .container form input[type="text"],
+#contact .container form input[type="email"] {
+  height: 40px;
+  padding: 12px 12px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+#contact .container textarea{
+  height:200px;
+  border-radius: 5px;
+  resize: none;
+}
+#contact .container select{
+  height: 40px;
+  /* padding: 12px 34px; */
+  font-size: 15px;
+  border-radius: 5px;
+}
+#contact .container form input[type="radio"],
+#contact .container form input[type="checkbox"] {
+  height: 16px;
+  width: 16px;
+  border: solid 1px red;
+}
+#contact .container form input:focus {
+  outline: none;
+}
+#contact .container form p {
+  color: white;
+  margin-top: 5px;
+}
+#contact .container form button {
+  height: 40px;
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: #f5cb5c;
+  color: #1e152a;
+  border: 1px solid #1e152a;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#contact .container form button:hover {
+  background-color: #1e152a;
+  color: #f5cb5c;
+  border: #f5cb5c 1px solid;
+  transition: 0.3s;
+}
+#contact .container form .gender label {
+  margin-right: 12px;
+  font-weight: normal;
+}
+#contact .container form .terms label {
+  font-weight: normal;
+  margin-left: 4px;
+}
+#contact .container form .terms label a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #f5cb5c;
+}

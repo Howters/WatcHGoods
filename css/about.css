@@ -1,0 +1,200 @@
+/* home */
+#home {
+  min-height: 100vh;
+  background: url("../asset/background/watchesYellow.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+#home .container {
+  min-height: 100vh;
+  padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  background-color: #00000060;
+}
+
+#home .container .text-section .description {
+  margin-bottom: 10%;
+}
+
+#home .container .image img {
+  padding-top: 20px;
+  margin-left: 350px;
+  margin-right: auto;
+  width: 400px;
+}
+
+#home .container .text-section .button {
+  margin-top: 10%;
+  padding: 12px 24px;
+  border-radius: 10px;
+  color: #1e152a;
+  background-color: #f5cb5c;
+  border: none;
+  font-size: 20px;
+  transition: 0.3s;
+  border: #f5cb5c solid 1px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+#home .container .text-section .button:hover {
+  background-color: #1e152a;
+  color: #f5cb5c;
+  transition: 0.3s;
+}
+
+#home .header {
+  color: #f5cb5c;
+}
+
+#home .container .social .social-container {
+  margin-top: 20%;
+  display: flex;
+  gap: 20px;
+}
+
+#home .container h1 {
+  text-align: left;
+  font-size: 68px;
+  padding-bottom: 50px;
+}
+
+#home .container h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-right: -100%;
+  margin-bottom: 20px;
+}
+
+#home .container h2 p {
+  font-size: 20px;
+}
+
+#home .container .social .social-container a {
+  text-decoration: none;
+}
+
+#home .container .social .social-container .facebook,
+#home .container .social .social-container .twitter,
+#home .container .social .social-container .linkedin,
+#home .container .social .social-container .instagram,
+#home .container .social .social-container .youtube {
+  background-color: #f5cb5c;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.5s;
+  font-size: 24px;
+}
+
+#home .container .social .social-container .facebook {
+  color: #3b5998;
+}
+
+#home .container .social .social-container .facebook:hover {
+  background-color: #3b5998;
+  color: white;
+  transition: 0.5s;
+}
+
+#home .container .social .social-container .twitter {
+  color: #08a0e9;
+}
+
+#home .container .social .social-container .twitter:hover {
+  background-color: #08a0e9;
+  color: white;
+  transition: 0.5s;
+}
+
+#home .container .social .social-container .linkedin {
+  color: #0077b5;
+}
+
+#home .container .social .social-container .linkedin:hover {
+  background-color: #0077b5;
+  color: white;
+  transition: 0.5s;
+}
+
+#home .container .social .social-container .instagram {
+  color: #de1b85;
+}
+
+#home .container .social .social-container .instagram:hover {
+  background-color: #de1b85;
+  color: white;
+  transition: 0.5s;
+}
+
+#home .container .social .social-container .youtube {
+  color: #e62117;
+}
+
+#home .container .social .social-container .youtube:hover {
+  background-color: #e62117;
+  color: white;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 800px) {
+  #home .container {
+    flex-direction: column;
+    padding: 0 5%;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  #home .container .image img {
+    display: none;
+    margin: 20px auto;
+    max-width: 100%;
+  }
+
+  #home .container h1 {
+    margin-top: 10%;
+    font-size: 48px;
+    text-align: center;
+  }
+
+  #home .container h2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  #home .container h2 p {
+    margin: 0;
+    font-size: 16px;
+  }
+  #home .container .text-section .header {
+    margin-bottom: 20px;
+  }
+  
+  #home .container .text-section .image {
+    order: 2;
+  }
+  
+  #home .container .text-section .description {
+    order: 3;
+  }
+  
+  #home .container .text-section .button {
+    order: 4;
+  }
+  #home .container .text-section .button {
+    margin-top: 5%;
+  }
+}
